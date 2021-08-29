@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:ital,wght@0,400;1,400;1,500&display=swap');
+*{
+    margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;
+
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    /* background-image: url(../img.10.jpg); */
+    font-family: 'ubuntu', sans-serif;
+    transition: all 0.3 ease;
+
+}
+.navbar.sticky{
+    padding: 30px 0;
+    background: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+.navbar .logo a span{
+    color: aqua;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: aqua
+}
+.home{
+    display: flex;
+    background-image: url(../img/17.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text1{
+    font-size: 27px;
+}
+.home .home-content .text2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'poppins', sans-serif;
+    
+}
+.about .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu', sans-serif;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+      width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 20px;
+    padding: 1px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+.services{
+    color: #fff;
+    background: #111;
+   
+}
+
+.services .max-width .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu', sa;
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    color: crimson;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card .box:hover .box{
+      transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+}
+.services .serv-content .card .text{
+      font-size: 25px;
+      font-weight: 500;
+      margin: 10px 0 7px 0;
+}
+.skills .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu', sans-serif;
+}
+.skills .skill-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skill-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.skills .skill-content .left .text{
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+}
+.skills .skill-content .left p{
+    text-align: justify;
+}
+.skills .skill-content .left a{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skill-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+.skills .skill-content .right .bar{
+        margin-bottom: 15px;
+}
+.skills .skill-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skill-content .right span{
+          font-weight: 500;
+          font-size: 18px;
+}
+.skills .skill-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+.skills .skill-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    
+    left: 0;
+    top: 0;
+    background: crimson;
+
+}
+.skills .skill-content .right .html::before{
+    width: 90%;
+}
+.skills .skill-content .right .css::before{
+    width: 70%;
+}
+.skills .skill-content .right .javascript::before{
+    width: 60%;
+}
+.skills .skill-content .right .github::before{
+    width: 80%;
+}
+img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  .contact .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu', sans-serif;
+  
+
+  }
+  .contact ..contact-content .column{
+      width: calc(50% - 30px);
+  }
+  .contact .contact-content .text{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+  }
+  .contact .contact-content .left p{
+           text-align: justify;
+  }
+  .contact .contact-content .left .icons{
+          margin: 10px 0;
+  }
+  .contact .contact-content .row{
+      display: flex;
+      height: 65px;
+      align-items: center;
+  }
+  .contact .contact-content .row .info{
+      margin-left: 30px;
+  }
+  .contact .contact-content .row i{
+      font-size: 25px;
+      color: crimson;
+  }
+  .contact .contact-content .info .head{
+      font-weight: 500;
+  }
+  .contact .contact-content .info .sub-title{
+         color: #333;
+  }
+  .contact .right form .fields{
+      display: flex;
+  }
+  .contact .right form .fields,
+  .contact .right form .fields .fields{
+      height: 45px;
+      width: 100%;
+  }
+  .contact .right form .field input{
+      height: 100%;
+      width: 100%;
+      border: 1px solid lightgrey;
+      border-radius: 6px;
+      outline: none;
+  }
+  
